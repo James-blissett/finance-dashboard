@@ -6,7 +6,7 @@ import type {
   FinancialRatios,
 } from '../types/financial';
 
-const DEFAULT_TAX_RATE = 0.30;
+const DEFAULT_TAX_RATE = 0.25; // PRC corporate income tax rate
 
 export function deriveIncomeStatement(
   is: IncomeStatementData,

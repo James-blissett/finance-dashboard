@@ -47,7 +47,7 @@ export function ForecastPage() {
       buildForecast(
         'Sales',
         derived.map((d) => d.derivedIS.sales),
-        (v) => `$${(v / 1000).toFixed(0)}B`
+        (v) => `¥${v.toLocaleString()}`
       ),
       buildForecast(
         'COGS %',
@@ -154,8 +154,8 @@ export function ForecastPage() {
       </div>
 
       <div className="rounded bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
-        Projections are based on linear regression of historical data (2014-2018).
-        Confidence bands represent 95% intervals. With only 5 data points, forecasts are indicative only.
+        Projections are based on linear regression of historical data (2017-2024).
+        Confidence bands represent 95% intervals. Note: Pop Mart's hypergrowth trajectory and 2020 IPO may limit regression accuracy.
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">

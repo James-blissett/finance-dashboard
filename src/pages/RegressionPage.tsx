@@ -135,7 +135,7 @@ export function RegressionPage() {
           yLabel={yVar.label}
         />
         <div className="mt-2 rounded bg-amber-50 p-2 text-xs text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
-          Note: Regression based on 5 data points (2014-2018). Results should be interpreted with caution due to small sample size.
+          Note: Regression based on 8 data points (2017-2024). Pop Mart's hypergrowth and 2020 IPO may introduce structural breaks affecting regression fit.
         </div>
       </Card>
 
