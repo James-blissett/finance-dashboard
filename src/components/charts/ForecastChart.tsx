@@ -64,9 +64,10 @@ export function ForecastChart({
             borderRadius: '6px',
             fontSize: '12px',
           }}
-          formatter={(value: number | null) =>
-            value !== null ? (yFormat ? yFormat(value) : value.toFixed(2)) : 'N/A'
-          }
+          formatter={(value) => {
+            const v = Number(value);
+            return !isNaN(v) ? (yFormat ? yFormat(v) : v.toFixed(2)) : 'N/A';
+          }}
         />
         <Legend wrapperStyle={{ fontSize: '12px' }} />
         <Area

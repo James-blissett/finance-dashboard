@@ -43,8 +43,8 @@ export function RatioBarChart({
             borderRadius: '6px',
             fontSize: '12px',
           }}
-          formatter={(value: number) =>
-            yFormat ? yFormat(value) : value.toFixed(2)
+          formatter={(value) =>
+            yFormat ? yFormat(Number(value)) : Number(value).toFixed(2)
           }
         />
         <Legend wrapperStyle={{ fontSize: '12px' }} />

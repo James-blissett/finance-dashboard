@@ -1,5 +1,4 @@
 import {
-  ScatterChart,
   Scatter,
   XAxis,
   YAxis,
@@ -71,7 +70,7 @@ export function RegressionScatter({
               borderRadius: '6px',
               fontSize: '12px',
             }}
-            formatter={(value: number) => value.toFixed(2)}
+            formatter={(value) => Number(value).toFixed(2)}
           />
           <Scatter data={allData} fill="#2563eb" />
           <Line
