@@ -8,7 +8,7 @@ export function Header() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-            Woolworths Group (ASX:WOW)
+            Pop Mart International (HKEX:9992)
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             Financial Ratio Analysis &amp; Proforma Model

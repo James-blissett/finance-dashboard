@@ -82,14 +82,14 @@ export function OverviewPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <Card title="Revenue & Net Income ($M)">
+        <Card title="Revenue & Net Income (RMB M)">
           <TrendChart
             data={revenueData}
             series={[
-              { key: 'Sales', label: 'Sales', color: '#2563eb' },
+              { key: 'Sales', label: 'Revenue', color: '#2563eb' },
               { key: 'Net Income', label: 'Net Income', color: '#059669' },
             ]}
-            yFormat={(v) => `$${(v / 1000).toFixed(0)}B`}
+            yFormat={(v) => `¥${v.toLocaleString()}`}
           />
         </Card>
 

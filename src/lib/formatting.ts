@@ -8,7 +8,7 @@ export function formatMultiple(value: number, decimals = 1): string {
 }
 
 export function formatCurrency(value: number, decimals = 0): string {
-  return `$${value.toLocaleString('en-AU', {
+  return `¥${value.toLocaleString('en-US', {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals,
   })}`;
